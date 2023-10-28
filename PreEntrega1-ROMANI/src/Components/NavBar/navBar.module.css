@@ -1,0 +1,24 @@
+.logoSpartan {
+    width: 80px;
+    height: 80px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menuList {
+    display: flex;
+}
+.menuList li {
+    list-style: none;
+}
+.menuList li a {
+    padding: 0 15px;
+    color: white;
+    font-size: 21px;
+}
+.icon {
+    width: 25px;
+    height: 25px;
+}
