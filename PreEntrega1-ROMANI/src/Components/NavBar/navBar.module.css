@@ -14,11 +14,18 @@
     list-style: none;
 }
 .menuList li a {
-    padding: 0 15px;
+    padding: 10px 15px;
+    margin: 0 15px;
     color: white;
     font-size: 21px;
 }
 .icon {
     width: 25px;
     height: 25px;
+}
+.saludo {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }

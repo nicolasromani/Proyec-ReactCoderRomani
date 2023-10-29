@@ -1,6 +1,6 @@
 import spartan from '../Assets/logoSpartan.png'
 import IconCart from '../CartWidget/CartWidget'
-import { logoSpartan, navbar, menuList, icon } from './navbar.module.css'
+import { logoSpartan, navbar, menuList } from './navbar.module.css'
 
 export default function NavBar() {
   return (
