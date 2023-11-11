@@ -1,29 +1,18 @@
 import { useState } from "react"
+import {countButton,blockCart,cartButton} from './itemCount.module.css'
 
 export default function ItemCount({stock, onAdd}) {
-  const [count, setCount] = useState(0)
-
-  const increment = () => {
-    if (count < stock) {
-      setCount (count + 1);
-    }
-  }
-
-  const decrement = () => {
-    if (count > 0) {
-      setCount (count - 1);
-    }
-  }
+  const [count, setCount] = useState(1)
 
   return (
-    <div>
-      <div>
-        <button onClick={increment} disabled = {count==10}> + </button>
-        <span>{count}</span>
-        <button onClick={decrement} disabled = {count==0}> - </button>
+    <div className={blockCart}>
+      <div className = {countButton}>
+        <button onClick = {() => setCount (count + 1)} disabled = {count==stock}> + </button>
+        <h4>{count}</h4>
+        <button onClick = {() => setCount (count - 1)} disabled = {count==1}> - </button>
       </div>
-      <div>
-        <button>Agregar al carrito</button>
+      <div className = {cartButton}>
+        <button onClick = {() => onAdd(count)} disabled = {!stock}> Add to cart </button>
       </div>
     </div>
   )
