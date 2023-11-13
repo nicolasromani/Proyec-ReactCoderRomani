@@ -15,9 +15,17 @@ const products = [
     },
     {
         id:3,
-        title:Dobby-lazzy,
+        title:Dobby-lazy,
         description: "Descripcion de remera",
         price: 3800,
         pictureUrl: './Components/Assets/model3.jpg' 
     }
 ]
+
+export const getProducts = () => {
+    return new Promise ((resolve) => {
+        setTimeout (() => {
+            resolve(products)
+        },5000)
+    })
+}
