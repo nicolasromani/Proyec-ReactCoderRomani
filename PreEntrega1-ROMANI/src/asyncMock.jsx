@@ -1,24 +1,28 @@
+import model1 from './Components/Assets/model1.png';
+import model2 from './Components/Assets/model2.png';
+import model3 from './Components/Assets/model3.png';
+
 const products = [
     {
         id:1,
-        title:Dobby-Wars,
+        title:"Dobby-Wars",
         description: "Descripcion de remera",
         price: 4500,
-        pictureUrl: './Components/Assets/model1.jpg'
+        pictureUrl: model1
     },
     {
         id:2,
-        title:Dobby-face,
+        title:"Dobbyface",
         description: "Descripcion de remera",
         price: 4200,
-        pictureUrl: './Components/Assets/model2.jpg' 
+        pictureUrl: model2
     },
     {
         id:3,
-        title:Dobby-lazy,
+        title:"Dobby-lazy",
         description: "Descripcion de remera",
         price: 3800,
-        pictureUrl: './Components/Assets/model3.jpg' 
+        pictureUrl: model3
     }
 ]
 
@@ -26,6 +30,6 @@ export const getProducts = () => {
     return new Promise ((resolve) => {
         setTimeout (() => {
             resolve(products)
-        },5000)
+        },500)
     })
 }
