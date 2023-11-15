@@ -19,7 +19,7 @@ export default function ItemListContainer({greeting}) {
 
   return (
     <div className={contBlq1}>
-        <span className = {saludo} > {greeting} </span>
+        <h1 className = {saludo} > {greeting} </h1>
         <ItemList products={products}/> 
     </div>
   )

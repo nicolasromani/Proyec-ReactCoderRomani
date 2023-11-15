@@ -1,5 +1,10 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Goldman', sans-serif;
+  font-family: 'Libre Baskerville', serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Source Code Pro', monospace;
+
   line-height: 1.5;
   font-weight: 400;
 
@@ -48,7 +53,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color:none;
 }
 button:focus,
 button:focus-visible {

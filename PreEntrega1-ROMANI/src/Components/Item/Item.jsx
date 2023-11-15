@@ -1,4 +1,4 @@
-import {cardProduct, imgCard} from './item.module.css'
+import {cardProduct, imgCard, buttonDetail} from './item.module.css'
 
 export default function Item({title, description, price, pictureUrl}) {
   return (
@@ -20,7 +20,7 @@ export default function Item({title, description, price, pictureUrl}) {
             </p>
         </section>
         <footer >
-            <button >Ver detalle</button>
+            <button className={buttonDetail}>Ver detalle</button>
         </footer>
     </article>
   )

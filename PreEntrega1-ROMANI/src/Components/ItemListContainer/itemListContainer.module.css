@@ -2,8 +2,8 @@
     margin-top: 550px;
 }
 .saludo {
-    font-size: 30px;
+    font-size: 50px;
     font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border: solid 2px yellow;
+    font-family: 'Goldman', sans-serif;
+    background-color: rgb(63, 60, 60);
 }

@@ -34,6 +34,7 @@
     color: rgb(223, 215, 215);
     position: relative;
     font-size: 21px;
+    font-family: 'Goldman', sans-serif;
 }
 .menuList li a::after {
     content: "";
@@ -57,4 +58,17 @@
 .icon {
     width: 25px;
     height: 25px;
+}
+.cartValue {
+    width: 20px;
+    border-radius: 50%;
+    font-size: 18px;
+    background-color: #479D31;
+    position: relative;
+    bottom: 15px;
+}
+.cart {
+    width: 60px;
+    display: flex;
+    align-items: center;
 }

@@ -21,7 +21,7 @@ const products = [
     },
     {
         id:2,
-        title:"Dobbyface",
+        title:"Dobby-face",
         description: "Descripcion de remera",
         price: 4200,
         pictureUrl: model2
@@ -35,66 +35,66 @@ const products = [
     },
     {
         id:4,
-        title:"Bajo-Chaleco",
+        title:"Bajo Chaleco Multicam",
         description: "Descripcion de remera",
         price: 3800,
         pictureUrl: bajo1
     },
     {
         id:5,
-        title:"Mochila-Tactica",
+        title:"Operador",
         description: "Descripcion de remera",
         price: 3800,
-        pictureUrl: mochi1
+        pictureUrl: model6
     },
     {
         id:6,
-        title:"Botas-combate",
+        title:"Skull-Operator",
         description: "Descripcion de remera",
         price: 3800,
-        pictureUrl: botas1
+        pictureUrl: model7
     },
     {
         id:7,
-        title:"Gorra",
+        title:"Gorra Operador",
         description: "Descripcion de remera",
         price: 3800,
         pictureUrl: gorra1
     },
     {
         id:8,
-        title:"Remera",
+        title:"Botas Patriot",
         description: "Descripcion de remera",
         price: 3800,
-        pictureUrl: model6
+        pictureUrl: botas1
     },
     {
         id:9,
-        title:"Remera",
-        description: "Descripcion de remera",
-        price: 3800,
-        pictureUrl: model7
-    },
-    {
-        id:10,
-        title:"Remera",
+        title:"Pantalon 3rd Gen",
         description: "Descripcion de remera",
         price: 3800,
         pictureUrl: pant1
     },
     {
-        id:11,
-        title:"Remera",
+        id:10,
+        title:"Mochila Tactica 24hs",
         description: "Descripcion de remera",
         price: 3800,
-        pictureUrl: parche5
+        pictureUrl: mochi1
     },
     {
-        id:12,
-        title:"Remera",
+        id:11,
+        title:"Combat Vest CONDOR",
         description: "Descripcion de remera",
         price: 3800,
         pictureUrl: vest4
+    },
+    {
+        id:12,
+        title:"Lego-Operator",
+        description: "Descripcion de remera",
+        price: 3800,
+        pictureUrl: parche5
     }
 ]
 
@@ -103,5 +103,13 @@ export const getProducts = () => {
         setTimeout (() => {
             resolve(products)
         },500)
+    })
+}
+
+export const getProductById = (productId) => {
+    return new Promise((resolve) => {
+        setTimeout(()=> {
+            resolve(products.find(prod => prod.id == productId))
+        })
     })
 }
