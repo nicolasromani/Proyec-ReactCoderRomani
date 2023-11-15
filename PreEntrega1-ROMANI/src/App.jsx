@@ -10,7 +10,7 @@ function App() {
     <>
       <NavBar />
       <ItemListContainer greeting = {"SPARTAN TACTICAL WEAR - Release your Warrior!"} />
-      <ItemCount stock = {10} onAdd = {(count) => console.log('Cantidad agregada ',count)}/> 
+      {/* <ItemCount stock = {10} onAdd = {(count) => console.log('Cantidad agregada ',count)}/>  */}
       <ItemDetailContainer />
     </>
   )
