@@ -1,12 +1,26 @@
+.LogBanner {
+    position: absolute;
+    width: 100%;
+}
+.LogBanner img {
+    width: 100%;
+    overflow: hidden;
+}
 .logoSpartan {
     width: 80px;
     height: 80px;
 }
 .navbar {
+    width: 1200px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    border: solid 2px white;
+    border-radius: 40px;
+    padding: 5px 15px;
+    background-color: rgba(110, 107, 107, 0.521);
+    position: relative;
+    translate: 30% 20%;
+    
 }
 .menuList {
     display: flex;

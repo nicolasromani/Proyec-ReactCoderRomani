@@ -1,9 +1,12 @@
 .cardProduct {
     border: solid 1px orange;
-    width: 550px;
-    height: 700px;
+    width: 350px;
+    height: 570px;
+    border-radius: 20px;
 }
 .imgCard {
-    width: 450px;
-    height: 450px;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0 ;
 }

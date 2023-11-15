@@ -1,4 +1,4 @@
-import { saludo } from './itemListContainer.module.css' 
+import { saludo,contBlq1 } from './itemListContainer.module.css' 
 import { useEffect, useState } from 'react'
 import { getProducts } from '../../asyncMock'
 import ItemList from '../ItemList/ItemList'
@@ -18,7 +18,7 @@ export default function ItemListContainer({greeting}) {
   },[])
 
   return (
-    <div>
+    <div className={contBlq1}>
         <span className = {saludo} > {greeting} </span>
         <ItemList products={products}/> 
     </div>

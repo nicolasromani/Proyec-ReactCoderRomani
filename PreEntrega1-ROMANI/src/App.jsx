@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <NavBar />
-      <ItemListContainer greeting = {"Bienvenido a la mejor tienda de indumentaria"} />
+      <ItemListContainer greeting = {"La tienda para los amantes de las actividades Outdoor"} />
       <ItemCount stock = {10} onAdd = {(count) => console.log('Cantidad agregada ',count)}/> 
     </>
   )
