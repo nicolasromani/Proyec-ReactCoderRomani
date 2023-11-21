@@ -1,8 +1,10 @@
 import ItemCount from "../ItemCount/ItemCount"
+import {cardDetail,prodDescrip} from "./itemDetail.module.css"
 
 export default function ItemDetail({id, title,description,pictureUrl,price}) {
   return (
-    <div>
+    <div className={cardDetail}>
+        <img src={pictureUrl} alt={title} />
         <article>
             <header>
                 <h2>
@@ -10,9 +12,8 @@ export default function ItemDetail({id, title,description,pictureUrl,price}) {
                 </h2>
             </header>
         </article>
-        <img src={pictureUrl} alt={title} />
         <section>
-            <p>
+            <p className={prodDescrip}>
                 Descripcion: {description} 
             </p>
             <p>

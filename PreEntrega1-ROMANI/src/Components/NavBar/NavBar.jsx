@@ -16,16 +16,16 @@ export default function NavBar() {
                 <a href="#">Home</a>
             </li>
             <li>
-                <a href="#">Indumentaria</a>
+                <a href="#">Remeras</a>
             </li>
             <li>
-                <a href="#">Equipamiento</a>
+                <a href="#">Uniformes</a>
             </li>
             <li>
-                <a href="#">Galeria</a>
+                <a href="#">Equipo</a>
             </li>
             <li>
-                <a href="#">About Us</a>
+                <a href="#">Gorras y Parches</a>
             </li>
         </ul>
         <IconCart />
