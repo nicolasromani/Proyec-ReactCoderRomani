@@ -13,87 +13,99 @@ import vest4 from './Components/Assets/vest4.jpg';
 
 const products = [
     {
-        id:1,
+        id:'1',
+        category: 'remeras', 
         title:"Dobby-Wars",
-        description: "Descripcion de remera",
+        description: "Descripcion de articulo",
         price: 4500,
         pictureUrl: model1
     },
     {
-        id:2,
+        id:'2',
+        category:'remeras',
         title:"Dobby-face",
-        description: "Descripcion de remera",
+        description: "Descripcion de articulo",
         price: 4200,
         pictureUrl: model2
     },
     {
-        id:3,
+        id:'3',
+        category:'remeras',
         title:"Dobby-lazy",
-        description: "Descripcion de remera",
-        price: 3800,
+        description: "Descripcion de articulo",
+        price: 4000,
         pictureUrl: model3
     },
     {
-        id:4,
+        id:'4',
+        category:'uniformes',
         title:"Bajo Chaleco Multicam",
-        description: "Descripcion de remera",
-        price: 3800,
+        description: "Descripcion de articulo",
+        price: 3860,
         pictureUrl: bajo1
     },
     {
-        id:5,
+        id:'5',
         title:"Operador",
-        description: "Descripcion de remera",
-        price: 3800,
+        category:'remeras',
+        description: "Descripcion de articulo",
+        price: 3980,
         pictureUrl: model6
     },
     {
-        id:6,
+        id:'6',
+        category:'remeras',
         title:"Skull-Operator",
-        description: "Descripcion de remera",
-        price: 3800,
+        description: "Descripcion de articulo",
+        price: 4050,
         pictureUrl: model7
     },
     {
-        id:7,
+        id:'7',
+        category:'gorrasyparches',
         title:"Gorra Operador",
-        description: "Descripcion de remera",
-        price: 3800,
+        description: "Descripcion de articulo",
+        price: 4100,
         pictureUrl: gorra1
     },
     {
-        id:8,
+        id:'8',
+        category:'uniformes',
         title:"Botas Patriot",
-        description: "Descripcion de remera",
-        price: 3800,
+        description: "Descripcion de articulo",
+        price: 4250,
         pictureUrl: botas1
     },
     {
-        id:9,
+        id:'9',
+        category:'uniformes',
         title:"Pantalon 3rd Gen",
-        description: "Descripcion de remera",
-        price: 3800,
+        description: "Descripcion de articulo",
+        price: 4300,
         pictureUrl: pant1
     },
     {
-        id:10,
+        id:'10',
+        category:'equipo',
         title:"Mochila Tactica 24hs",
-        description: "Descripcion de remera",
-        price: 3800,
+        description: "Descripcion de articulo",
+        price: 3900,
         pictureUrl: mochi1
     },
     {
-        id:11,
+        id:'11',
+        category:'equipo',
         title:"Combat Vest CONDOR",
-        description: "Descripcion de remera",
+        description: "Descripcion de articulo",
         price: 3800,
         pictureUrl: vest4
     },
     {
-        id:12,
+        id:'12',
+        category:'gorrasyparches',
         title:"Lego-Operator",
-        description: "Descripcion de remera",
-        price: 3800,
+        description: "Descripcion de articulo",
+        price: 3750,
         pictureUrl: parche5
     }
 ]
@@ -110,6 +122,14 @@ export const getProductById = (productId) => {
     return new Promise((resolve) => {
         setTimeout(()=> {
             resolve(products.find(prod => prod.id == productId))
+        },500)
+    })
+}
+
+export const getProductByCategory = (productCategory) => {
+    return new Promise((resolve) => {
+        setTimeout(()=> {
+            resolve(products.filter(prod => prod.category == productCategory))
         },500)
     })
 }

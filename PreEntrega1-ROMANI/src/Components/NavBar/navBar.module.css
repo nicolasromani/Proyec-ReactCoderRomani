@@ -25,18 +25,18 @@
 .menuList {
     display: flex;
 }
+.menuList li a {
+    color: rgb(201, 188, 188);
+}
 .menuList li {
     list-style: none;
-}
-.menuList li a {
     padding: 10px 2px;
     margin: 0 15px;
-    color: rgb(223, 215, 215);
     position: relative;
     font-size: 21px;
     font-family: 'Goldman', sans-serif;
 }
-.menuList li a::after {
+.menuList li ::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -48,11 +48,11 @@
     transform-origin: bottom right ;
     transition: transform 0.3s ease-out; 
 }
-.menuList li a:hover::after {
+.menuList li :hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
-.menuList li a:hover {
+.menuList li :hover {
     color: white;
 }  
 .icon {

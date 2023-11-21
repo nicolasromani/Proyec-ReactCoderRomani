@@ -1,7 +1,7 @@
 import ItemCount from "../ItemCount/ItemCount"
-import {cardDetail,prodDescrip} from "./itemDetail.module.css"
+import {cardDetail, prodDescrip, footCard} from "./itemDetail.module.css"
 
-export default function ItemDetail({id, title,description,pictureUrl,price}) {
+export default function ItemDetail({title,description,pictureUrl,price}) {
   return (
     <div className={cardDetail}>
         <img src={pictureUrl} alt={title} />
@@ -20,7 +20,7 @@ export default function ItemDetail({id, title,description,pictureUrl,price}) {
                 Precio: ${price}
             </p>
         </section>
-        <footer>
+        <footer className={footCard}>
             <ItemCount initial={1} stock={10} onAdd={(quantity) => console.log('Cantidad agregada',quantity)}/>
         </footer>
     </div>

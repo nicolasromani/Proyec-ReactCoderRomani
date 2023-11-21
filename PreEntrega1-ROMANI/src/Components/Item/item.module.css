@@ -16,6 +16,11 @@
 }
 .buttonDetail {
     background-color: #479D31;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
     font-family: 'Goldman', sans-serif;
-    outline: 4px red;
+}
+.buttonDetail:hover {
+    border: solid white 2px;
 }

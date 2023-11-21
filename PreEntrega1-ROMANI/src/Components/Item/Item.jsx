@@ -1,6 +1,7 @@
 import {cardProduct, imgCard, buttonDetail} from './item.module.css'
+import { Link } from 'react-router-dom'
 
-export default function Item({title, description, price, pictureUrl}) {
+export default function Item({id, title, description, price, pictureUrl}) {
   return (
     <article className={cardProduct}>
         <picture>
@@ -19,8 +20,8 @@ export default function Item({title, description, price, pictureUrl}) {
                 Descripcion: {description}
             </p>
         </section>
-        <footer >
-            <button className={buttonDetail}>Ver detalle</button>
+        <footer>
+            <Link to={`/item/${id}`} className={buttonDetail}>Ver Detalle</Link>
         </footer>
     </article>
   )
