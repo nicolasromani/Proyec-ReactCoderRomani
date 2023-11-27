@@ -19,3 +19,13 @@
 .footCard {
     margin: 15px;
 }
+.cardButton {
+    background-color: #479D31;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Goldman', sans-serif;
+}
+.cardButton:hover {
+    border: solid white 2px;
+}

@@ -18,7 +18,8 @@ const products = [
         title:"Dobby-Wars",
         description: "Descripcion de articulo",
         price: 4500,
-        pictureUrl: model1
+        pictureUrl: model1,
+        stock: 4
     },
     {
         id:'2',
@@ -26,7 +27,8 @@ const products = [
         title:"Dobby-face",
         description: "Descripcion de articulo",
         price: 4200,
-        pictureUrl: model2
+        pictureUrl: model2,
+        stock: 6
     },
     {
         id:'3',
@@ -34,7 +36,8 @@ const products = [
         title:"Dobby-lazy",
         description: "Descripcion de articulo",
         price: 4000,
-        pictureUrl: model3
+        pictureUrl: model3,
+        stock: 3
     },
     {
         id:'4',
@@ -42,7 +45,8 @@ const products = [
         title:"Bajo Chaleco Multicam",
         description: "Descripcion de articulo",
         price: 3860,
-        pictureUrl: bajo1
+        pictureUrl: bajo1,
+        stock: 8
     },
     {
         id:'5',
@@ -50,7 +54,8 @@ const products = [
         category:'remeras',
         description: "Descripcion de articulo",
         price: 3980,
-        pictureUrl: model6
+        pictureUrl: model6,
+        stock: 4
     },
     {
         id:'6',
@@ -58,7 +63,8 @@ const products = [
         title:"Skull-Operator",
         description: "Descripcion de articulo",
         price: 4050,
-        pictureUrl: model7
+        pictureUrl: model7,
+        stock: 10
     },
     {
         id:'7',
@@ -66,7 +72,8 @@ const products = [
         title:"Gorra Operador",
         description: "Descripcion de articulo",
         price: 4100,
-        pictureUrl: gorra1
+        pictureUrl: gorra1,
+        stock: 9
     },
     {
         id:'8',
@@ -74,7 +81,8 @@ const products = [
         title:"Botas Patriot",
         description: "Descripcion de articulo",
         price: 4250,
-        pictureUrl: botas1
+        pictureUrl: botas1,
+        stock: 2
     },
     {
         id:'9',
@@ -82,7 +90,8 @@ const products = [
         title:"Pantalon 3rd Gen",
         description: "Descripcion de articulo",
         price: 4300,
-        pictureUrl: pant1
+        pictureUrl: pant1,
+        stock: 7
     },
     {
         id:'10',
@@ -90,7 +99,8 @@ const products = [
         title:"Mochila Tactica 24hs",
         description: "Descripcion de articulo",
         price: 3900,
-        pictureUrl: mochi1
+        pictureUrl: mochi1,
+        stock: 6
     },
     {
         id:'11',
@@ -98,7 +108,8 @@ const products = [
         title:"Combat Vest CONDOR",
         description: "Descripcion de articulo",
         price: 3800,
-        pictureUrl: vest4
+        pictureUrl: vest4,
+        stock: 8
     },
     {
         id:'12',
@@ -106,7 +117,8 @@ const products = [
         title:"Lego-Operator",
         description: "Descripcion de articulo",
         price: 3750,
-        pictureUrl: parche5
+        pictureUrl: parche5,
+        stock: 5
     }
 ]
 
