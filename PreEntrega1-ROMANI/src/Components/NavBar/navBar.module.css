@@ -55,20 +55,24 @@
 .menuList li :hover {
     color: white;
 }  
+.carrito{
+    display: flex;
+}
 .icon {
     width: 25px;
     height: 25px;
+    color:white;
 }
-.cartValue {
-    width: 20px;
+.cartCount {
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    font-size: 18px;
+    font-size: 21px;
     background-color: #479D31;
-    position: relative;
-    bottom: 15px;
-}
-.cart {
-    width: 60px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 15px;
+    right: 10px;
 }
