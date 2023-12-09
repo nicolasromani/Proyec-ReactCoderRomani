@@ -1,0 +1,30 @@
+.formStyles {
+    display: flex;
+    flex-direction: column;
+    
+    margin-bottom: 25px;
+    align-items: center;
+}
+.labelStyles{
+    display: flex;
+    flex-direction: column;
+    font-size: 21px;
+}
+.inputStyles {
+    width: 400px;
+    height: 25px;
+    font-size: 21px;
+}
+.inputStyles:hover {
+    border: solid 2px #479D31;
+    border-radius: 5px;
+    outline: none;
+}
+.buttonForm {
+    background-color: #479D31;
+    color: white;
+    margin: 10px;
+}
+.buttonForm:hover {
+    border: solid 2px white;
+}

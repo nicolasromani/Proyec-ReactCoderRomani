@@ -1,0 +1,29 @@
+.checkoutMenu {
+    margin-top: 350px;
+    border: solid 3px #479D31;
+    border-radius: 25px;
+    width: 600px;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(63, 60, 60);
+    font-family: 'Goldman', sans-serif;
+}
+.checkoutMenu h1 {
+    font-size: 30px;
+}
+.order {
+    margin-top: 300px;
+    background-color: #479D31;
+    border-radius: 25px;
+    color: white;
+    font-weight: 40px;
+    width: 1200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Goldman', sans-serif;
+}
