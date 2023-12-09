@@ -11,10 +11,7 @@ export const CartProvider = ({ children }) => {
     const [totalQuantity, setTotalQuantity] = useState(0);
     const [total, setTotal] = useState(0);
 
-    console.log(cart)
-    
     useEffect(() => {
-        // Calcula el totalQuantity y total cada vez que cambia el carrito
         calculateTotals();
     }, [cart]);
 

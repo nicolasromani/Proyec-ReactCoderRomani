@@ -1,6 +1,5 @@
 import { saludo,contBlq1 } from './itemListContainer.module.css' 
 import { useEffect, useState } from 'react'
-// import { getProducts, getProductByCategory } from '../../asyncMock'
 import ItemList from '../ItemList/ItemList'
 import { useParams } from 'react-router-dom'
 import { getDocs, collection, query, where } from 'firebase/firestore'
@@ -33,15 +32,6 @@ export default function ItemListContainer({greeting}) {
       .finally(() => {
         setLoading(false)
       })
-    // const asynFunc = categoryId ? getProductByCategory : getProducts
-
-    // asynFunc(categoryId)
-    //   .then(response => {
-    //     setProducts (response)
-    //   })
-    //   .catch(error => {
-    //     console.error(error)
-    //   })
   },[categoryId])
 
   return (
