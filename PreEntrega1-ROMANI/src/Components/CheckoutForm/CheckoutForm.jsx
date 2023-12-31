@@ -5,15 +5,25 @@ export default function CheckoutForm({ onConfirm }) {
     const [nombre, setNombre] = useState('')
     const [phone, setPhone] = useState('')
     const [email, setEmail] = useState ('')
+    const [error, setError] = useState(null)
 
     const handleConfirm = (e) => {
-        e.preventDefault()
+        e.preventDefault();
+
+        // Verificar si hay campos vacíos
+        if (!nombre || !phone || !email) {
+            setError('Todos los campos son obligatorios');
+            return;
+        }
 
         const userData = {
             nombre, phone, email
-        }
+        };
 
-        onConfirm(userData)
+        // Limpia el error antes de enviar los datos
+        setError(null);
+
+        onConfirm(userData);
     }
 
   return (
