@@ -3,9 +3,9 @@ import ItemListContainer from './Components/ItemListContainer/ItemListContainer'
 import './App.css'
 import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { CartProvider } from './context/cartContext'
+import { CartProvider } from './context/CartContext.jsx'
 import Cart from './Components/Cart/Cart'
-import Checkout from './Components/checkout/checkout'
+import Checkout from './Components/Checkout/Checkout'
 
 
 function App() {

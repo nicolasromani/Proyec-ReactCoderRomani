@@ -1,7 +1,7 @@
 import spartan from '../Assets/logoSpartan.png'
 import banner from '../Assets/banner.png'
 import IconCart from '../CartWidget/CartWidget'
-import { logoSpartan, navbar, menuList, LogBanner} from './navbar.module.css'
+import { logoSpartan, navbar, menuList, LogBanner} from './navBar.module.css'
 import { NavLink, Link } from 'react-router-dom'
 
 export default function NavBar() {

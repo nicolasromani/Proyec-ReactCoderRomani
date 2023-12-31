@@ -1,7 +1,8 @@
 import { useContext } from 'react';
 import {icon, cartCount,carrito} from '../NavBar/navBar.module.css'
-import { CartContext } from '../../context/cartContext';
+//import { CartContext } from '../../context/CartContext';
 import { Link } from 'react-router-dom';
+import { CartContext } from '../../context/CartContext';
 
 
 export default function IconCart() {

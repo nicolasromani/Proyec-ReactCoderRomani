@@ -2,7 +2,7 @@ import ItemCount from "../ItemCount/ItemCount"
 import {cardDetail, prodDescrip, footCard, cardButton} from "./itemDetail.module.css"
 import { useContext, useState } from "react"
 import { Link } from "react-router-dom"
-import { CartContext } from "../../context/cartContext"
+import { CartContext } from "../../context/CartContext"
 
 export default function ItemDetail({id,title,description,pictureUrl,price,stock}) {
     const [quantityAdded, setQuantityAdded] = useState(0)
